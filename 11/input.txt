@@ -1,0 +1,36 @@
+monkeys.append(
+    Monkey(
+        0,
+        [79, 98],
+        lambda old: old * 19,
+        lambda item: item % 23 == 0,
+        lambda result: 2 if result else 3,
+    )
+)
+monkeys.append(
+    Monkey(
+        1,
+        [54, 65, 75, 74],
+        lambda old: old + 6,
+        lambda item: item % 19 == 0,
+        lambda result: 2 if result else 0,
+    )
+)
+monkeys.append(
+    Monkey(
+        2,
+        [79, 60, 97],
+        lambda old: old * old,
+        lambda item: item % 13 == 0,
+        lambda result: 1 if result else 3,
+    )
+)
+monkeys.append(
+    Monkey(
+        3,
+        [74],
+        lambda old: old + 3,
+        lambda item: item % 17 == 0,
+        lambda result: 0 if result else 1,
+    )
+)
